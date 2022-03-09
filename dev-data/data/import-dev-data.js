@@ -11,11 +11,11 @@ let db = new sqlite3.Database(dbName, sqlite3.OPEN_READWRITE, (err) => {
 
 // Data
 // db.run(
-//   'CREATE TABLE punch(id, lang, author, punchline, Timestamp)'
+//   'CREATE TABLE punch(id, lang, author, punchline)'
 // );
 
 // db.run(
-//   'INSERT INTO punch(id, lang, author, punchline, Timestamp) VALUES(0, "fr", "toto", "toto est cool!", "now")'
+//   'INSERT INTO punch(id, lang, author, punchline) VALUES(0, "fr", "toto", "toto est cool!")'
 // );
 
 db.get('SELECT * FROM punch', (err, data) => {
