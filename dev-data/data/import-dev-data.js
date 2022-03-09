@@ -1,4 +1,4 @@
-const sqlite3 = require('sqlite3').verbose();
+const sqlite3 = require('sqlite3');
 const dbName = 'main.db';
 
 // Open the DB READ ONLY
@@ -10,6 +10,20 @@ let db = new sqlite3.Database(dbName, sqlite3.OPEN_READWRITE, (err) => {
 });
 
 // Data
+// db.run(
+//   'CREATE TABLE punch(id, lang, author, punchline, Timestamp)'
+// );
+
+// db.run(
+//   'INSERT INTO punch(id, lang, author, punchline, Timestamp) VALUES(0, "fr", "toto", "toto est cool!", "now")'
+// );
+
+db.get('SELECT * FROM punch', (err, data) => {
+  if (err) {
+    return console.error(err.message);
+  }
+  console.log(data);
+});
 
 // Close the DB
 db.close((err) => {
