@@ -1,10 +1,10 @@
-const sqlite3 = require('sqlite3');
+const sqlite3 = require('sqlite3').verbose();
 const dbName = 'punchline.db';
 
 // Open the DB READ ONLY
 let db = new sqlite3.Database(dbName, sqlite3.OPEN_READONLY, (err) => {
   if (err) {
-    console.error('Database Error');
+    return console.error('Database Error');
   }
   console.log('Database : ' + dbName + ' is ready.');
 });
@@ -12,7 +12,7 @@ let db = new sqlite3.Database(dbName, sqlite3.OPEN_READONLY, (err) => {
 // close the DB
 db.close((err) => {
   if (err) {
-    console.error('Database Errro');
+    return console.error('Database Error');
   }
   console.log('Database : ' + dbName + ' is closed.');
 });
