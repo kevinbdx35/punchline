@@ -1,20 +1,23 @@
 {
-  "name": "punchine",
-  "version": "1.0.0",
-  "description": "punchine API",
-  "main": "main.js",
-  "scripts": {
-    "start": "nodemon main.js"
-  },
-  "keywords": [
-    "punchline"
-  ],
-  "author": "Kevin, Rony, Victor",
-  "license": "MIT",
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  },
-  "dependencies": {
-    "sqlite3": "^4.2.0"
-  }
+    "name": "punchine",
+    "version": "1.0.0",
+    "description": "punchine API",
+    "main": "main.js",
+    "scripts": {
+        "start": "nodemon main.js"
+    },
+    "keywords": [
+        "punchline"
+    ],
+    "author": "Kevin, Rony, Victor",
+    "license": "MIT",
+    "devDependencies": {
+        "nodemon": "^2.0.15",
+        "sass": "^1.49.9"
+    },
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.3",
+        "sqlite3": "^4.2.0"
+    }
 }
