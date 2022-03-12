@@ -60,4 +60,4 @@ function create(quoteObj) {
   return { message };
 }
 
-module.export = { getMultiple, create };
+module.exports = { getMultiple, create };
