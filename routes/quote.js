@@ -1,7 +1,7 @@
 //Import
 const express = require('express');
 const router = express.Router();
-const quotes = requires('../services.quotes');
+const quotes = requires('../services/quotes');
 
 //GET quotes listing
 router.get('/', function (req, res, next) {
