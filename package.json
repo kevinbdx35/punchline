@@ -1,21 +1,24 @@
 {
-    "name": "punchline-react",
+    "name": "punchine",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "description": "punchine API",
+    "main": "main.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "parcel public/index.html"
+        "start": "nodemon main.js"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "keywords": [
+        "punchline"
+    ],
+    "author": "Kevin, Rony, Victor",
+    "license": "MIT",
     "dependencies": {
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2",
-        "react-router-dom": "^6.2.2"
+        "better-sqlite3": "^7.5.0",
+        "cors": "^2.8.5",
+        "ejs": "^3.1.6",
+        "express": "^4.17.3"
     },
     "devDependencies": {
-        "parcel": "^2.3.2"
+        "nodemon": "^2.0.15",
+        "sass": "^1.49.9"
     }
 }
