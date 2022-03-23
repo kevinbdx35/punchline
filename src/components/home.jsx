@@ -48,10 +48,10 @@ export const Home = (props) => {
               <a href="/about">about</a>
             </li>
             <li>
-              <a href="">get started</a>
+              <a href="/getstarted">get started</a>
             </li>
             <li>
-              <a href="">the team</a>
+              <a href="/theteam">the team</a>
             </li>
           </ul>
         </nav>

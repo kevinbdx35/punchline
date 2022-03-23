@@ -1,6 +1,7 @@
 import React from 'react';
 
-export const About = (props) => {
+export const Team = (props) => {
+
   return (
     <div>
       <header>
@@ -24,10 +25,9 @@ export const About = (props) => {
         </nav>
       </header>
 
-      <div className='main'>
-        about
+      <div className="main">
+        team
       </div>
-
     </div>
   );
 };

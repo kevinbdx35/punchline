@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const About = (props) => {
+export const Started = (props) => {
   return (
     <div>
       <header>
@@ -25,7 +25,7 @@ export const About = (props) => {
       </header>
 
       <div className='main'>
-        about
+        started
       </div>
 
     </div>
