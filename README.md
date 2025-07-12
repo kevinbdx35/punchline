@@ -227,8 +227,10 @@ Every push to the `main` branch automatically deploys the application to GitHub 
 1. **Push to main branch**
 2. **GitHub Actions runs tests**
 3. **Builds the application**
-4. **Deploys to GitHub Pages**
+4. **Deploys to gh-pages branch**
 5. **Available at `https://yourusername.github.io/punchline/`**
+
+**Setup**: In repository settings, enable GitHub Pages with source set to `gh-pages` branch.
 
 📖 **[Complete Deployment Guide](./DEPLOYMENT_GUIDE.md)**
 

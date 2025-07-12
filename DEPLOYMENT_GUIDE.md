@@ -7,8 +7,9 @@
 1. **Enable GitHub Pages in Repository Settings**
    - Go to your repository on GitHub
    - Navigate to `Settings` > `Pages`
-   - Select `GitHub Actions` as the source
-   - The workflow will automatically deploy on every push to `main`
+   - Select `Deploy from a branch` as the source
+   - Choose `gh-pages` branch and `/ (root)` folder
+   - The workflow will automatically create and deploy to the `gh-pages` branch on every push to `main`
 
 2. **Repository Secrets (Optional)**
    - For advanced deployments, add these secrets in `Settings` > `Secrets and variables` > `Actions`:
@@ -32,7 +33,8 @@ The deployment process includes:
    - Creates a demo version with mock data
 
 3. **Deploy Phase**
-   - Uploads the built application to GitHub Pages
+   - Creates/updates the `gh-pages` branch with the built application
+   - GitHub Pages serves the content from the `gh-pages` branch
    - Makes it available at `https://yourusername.github.io/punchline`
 
 ### Access Your Deployed Application
@@ -115,10 +117,12 @@ FRONTEND_URL=http://localhost:1234
 ## Troubleshooting
 
 ### GitHub Pages Deployment Fails
-1. Check that GitHub Pages is enabled in repository settings
+1. Check that GitHub Pages is enabled in repository settings with `gh-pages` branch selected
 2. Ensure the `main` branch exists and has commits
 3. Check the Actions tab for error details
 4. Verify the workflow file syntax
+5. Ensure the `gh-pages` branch has been created by the workflow
+6. Check that the repository has the correct permissions for GitHub Actions
 
 ### Build Errors
 1. Check Node.js version compatibility (requires 18+)
