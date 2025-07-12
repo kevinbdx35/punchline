@@ -230,9 +230,9 @@ Every push to the `main` branch automatically deploys the application to GitHub 
 4. **Deploys to gh-pages branch**
 5. **Available at `https://yourusername.github.io/punchline/`**
 
-**Setup**: In repository settings, enable GitHub Pages with source set to `gh-pages` branch.
+**Setup**: The `gh-pages` branch will be created automatically on first deployment.
 
-📖 **[Complete Deployment Guide](./DEPLOYMENT_GUIDE.md)**
+📖 **[Complete Deployment Guide](./DEPLOYMENT_GUIDE.md)** | 🚀 **[First Deployment Instructions](./FIRST_DEPLOYMENT.md)**
 
 ### Production with Docker
 
