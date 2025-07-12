@@ -51,10 +51,11 @@ Une fois que GitHub Actions a créé la branche `gh-pages` :
 
 ## ⏱️ Timing attendu
 
-- **Tests** : ~2-3 minutes
-- **Build** : ~1-2 minutes  
+- **Frontend Build** : ~1-2 minutes
 - **Déploiement** : ~30 secondes
-- **Total** : ~5 minutes pour le premier déploiement
+- **Total** : ~3 minutes pour le premier déploiement
+
+**Note** : Le déploiement GitHub Pages utilise uniquement le frontend avec des données de démonstration pour éviter les dépendances natives complexes.
 
 ## 🎯 Résultat attendu
 

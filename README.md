@@ -4,7 +4,7 @@
 
 ![Screen Capture](https://github.com/kevinbdx35/punchline/blob/main/screencapture-genuine-dragon-4b0e59-netlify-app-2022-04-26-20_11_52.png?raw=true)
 
-[![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen.svg)](https://nodejs.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Test Coverage](https://img.shields.io/badge/coverage-90%25-brightgreen.svg)](https://github.com/kevinbdx35/punchline)
 [![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](https://www.docker.com/)
@@ -42,7 +42,7 @@
 The application automatically deploys to GitHub Pages on every commit to `main`.
 
 ### Prerequisites
-- Node.js 18+ 
+- Node.js 20+ 
 - npm or yarn
 - Docker (optional)
 
