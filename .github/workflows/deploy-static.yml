@@ -452,7 +452,7 @@ jobs:
                       })
                       .catch(error => {
                           console.error('Error loading documentation:', error);
-                          document.getElementById('content').innerHTML = = '<h2>📚 API Documentation</h2><p>Visit the <a href="https://github.com/kevinbdx35/punchline">GitHub repository</a> for complete documentation.</p>';
+                          document.getElementById('content').innerHTML = '<h2>📚 API Documentation</h2><p>Visit the <a href="https://github.com/kevinbdx35/punchline">GitHub repository</a> for complete documentation.</p>';
                       });
               </script>
           </body>
@@ -475,7 +475,8 @@ jobs:
           force_orphan: true
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: 'Deploy static React app to GitHub Pages from ${{ github.sha }}'
+          commit_message: 'Deploy React application v${{ github.run_number }} from ${{ github.sha }}'
+          cname: false
 
   # Notify on deployment success
   notify:

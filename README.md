@@ -1,6 +1,6 @@
 # 🎯 Punchline API
 
-> A modern, secure, and scalable REST API for managing quotes and punchlines with a beautiful React frontend.
+> Modern REST API for managing inspirational quotes with React frontend. Features secure authentication, search functionality, and automated CI/CD deployment.
 
 ![Screen Capture](https://github.com/kevinbdx35/punchline/blob/main/screencapture-genuine-dragon-4b0e59-netlify-app-2022-04-26-20_11_52.png?raw=true)
 
@@ -37,7 +37,7 @@
 ## 🚀 Quick Start
 
 ### 🌐 Live Demo
-**[View Live Application →](https://yourusername.github.io/punchline/)**
+**[View Live Application →](https://kevinbdx35.github.io/punchline/)**
 
 The application automatically deploys to GitHub Pages on every commit to `main`.
 
@@ -75,10 +75,11 @@ docker-compose up --build
 docker-compose -f docker-compose.yml up -d
 ```
 
-The application will be available at:
+**Live Demo**: https://kevinbdx35.github.io/punchline/
+
+**Local Development**:
 - **API**: http://localhost:3000
 - **Frontend**: http://localhost:1234
-- **Nginx Proxy**: http://localhost:80
 
 ## 📚 API Documentation
 
@@ -228,9 +229,9 @@ Every push to the `main` branch automatically deploys the application to GitHub 
 2. **GitHub Actions runs tests**
 3. **Builds the application**
 4. **Deploys to gh-pages branch**
-5. **Available at `https://yourusername.github.io/punchline/`**
+5. **Available at `https://kevinbdx35.github.io/punchline/`**
 
-**Setup**: The `gh-pages` branch will be created automatically on first deployment.
+**Setup**: The `gh-pages` branch is created automatically on deployment.
 
 📖 **[Complete Deployment Guide](./DEPLOYMENT_GUIDE.md)** | 🚀 **[First Deployment Instructions](./FIRST_DEPLOYMENT.md)**
 
@@ -276,13 +277,16 @@ We welcome contributions! Please follow these steps:
 - Update documentation
 - Use conventional commits
 
-## 📈 Performance
+## 📈 Performance & Features
 
 - **⚡ Response Time**: < 100ms average
-- **🔄 Caching**: Multi-layer caching strategy
+- **🔄 Caching**: Multi-layer caching strategy  
 - **📦 Compression**: Gzip/Brotli compression
 - **🗄️ Database**: Optimized SQLite with indexes
 - **🚀 Rate Limiting**: 100 requests per 15 minutes
+- **🎲 Random Quotes**: Inspirational content on demand
+- **🔍 Smart Search**: Real-time filtering and pagination
+- **❤️ Favorites**: Persistent user preferences
 
 ## 🔒 Security
 
@@ -314,6 +318,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - Express.js community for the robust framework
 - React team for the excellent frontend library
 - SQLite for the lightweight database solution
+- GitHub Pages for free hosting
 - All contributors and testers
 
 ---
@@ -322,6 +327,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **⭐ Star this repository if you found it helpful!**
 
-[Report Bug](https://github.com/kevinbdx35/punchline/issues) • [Request Feature](https://github.com/kevinbdx35/punchline/issues) • [Documentation](./API_DOCUMENTATION.md)
+[Live Demo](https://kevinbdx35.github.io/punchline/) • [Report Bug](https://github.com/kevinbdx35/punchline/issues) • [Documentation](./API_DOCUMENTATION.md)
 
 </div>
