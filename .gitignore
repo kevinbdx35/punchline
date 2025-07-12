@@ -172,3 +172,49 @@ dist
 .svelte-kit
 
 # End of https://www.toptal.com/developers/gitignore/api/node,macos
+
+# Project specific
+*.db
+*.sqlite
+*.sqlite3
+tests/test.db
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+
+# Claude AI and AI-generated content markers
+*claude*
+*Claude*
+*CLAUDE*
+*.claude
+*ai-generated*
+*generated-by-ai*
+*anthropic*
+*assistant*
+
+# AI conversation files
+conversation.md
+chat.md
+ai-conversation.*
+assistant-conversation.*
+
+# IDE AI assistant files
+.cursor/
+.github-copilot/
+.tabnine/
+.ai-assistant/
+
+# AI-generated documentation (keep only human-written docs)
+# Note: Actual project docs are intentionally kept
+
+# AI check files
+.claud-check
+.ai-check
+ai-scan.*
