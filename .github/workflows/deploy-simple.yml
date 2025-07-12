@@ -37,6 +37,16 @@ jobs:
         working-directory: ./punchline-front
         run: |
           npm install
+          
+      - name: Debug frontend structure
+        working-directory: ./punchline-front
+        run: |
+          echo "=== Frontend directory structure ==="
+          ls -la
+          echo "=== Package.json content ==="
+          cat package.json
+          echo "=== Available scripts ==="
+          npm run
         
       - name: Build frontend for GitHub Pages
         working-directory: ./punchline-front
@@ -45,7 +55,10 @@ jobs:
           REACT_APP_API_BASE_URL: https://jsonplaceholder.typicode.com
           PUBLIC_URL: /punchline
         run: |
+          echo "Starting frontend build..."
           npm run build
+          echo "Build completed, checking output..."
+          ls -la dist/ || ls -la build/ || echo "No build output found"
           
       # Create GitHub Pages structure
       - name: Prepare GitHub Pages deployment
@@ -54,12 +67,23 @@ jobs:
           mkdir -p github-pages
           
           # Copy frontend build
+          echo "=== Checking for frontend build output ==="
+          ls -la punchline-front/
+          
           if [ -d "punchline-front/dist" ]; then
+            echo "Found dist directory, copying contents..."
             cp -r punchline-front/dist/* github-pages/
+            echo "Copied dist contents:"
+            ls -la github-pages/
           elif [ -d "punchline-front/build" ]; then
+            echo "Found build directory, copying contents..."
             cp -r punchline-front/build/* github-pages/
+            echo "Copied build contents:"
+            ls -la github-pages/
           else
-            echo "No frontend build found, creating fallback"
+            echo "❌ No frontend build found! Available directories:"
+            ls -la punchline-front/
+            echo "Creating fallback page..."
           fi
           
           # Create API documentation site
