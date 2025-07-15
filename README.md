@@ -1,6 +1,8 @@
 # 🎯 Punchline API
 
 > Modern REST API for managing inspirational quotes with React frontend. Features secure authentication, search functionality, and automated CI/CD deployment.
+>
+> [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W61I0YBJ)
 
 ![Screen Capture](https://github.com/kevinbdx35/punchline/blob/main/screencapture-genuine-dragon-4b0e59-netlify-app-2022-04-26-20_11_52.png?raw=true)
 
