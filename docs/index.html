@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punchline API Documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-light.min.css">
+    <style>
+        .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 980px; margin: 0 auto; padding: 45px; }
+        @media (max-width: 767px) { .markdown-body { padding: 15px; } }
+        .header { text-align: center; margin-bottom: 2rem; }
+        .nav { background: #f6f8fa; padding: 1rem; margin-bottom: 2rem; border-radius: 8px; }
+        .nav a { margin-right: 1rem; text-decoration: none; color: #0969da; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <article class="markdown-body">
+        <div class="header">
+            <h1>🎯 Punchline API</h1>
+            <p>A modern, secure, and scalable REST API for managing quotes and punchlines</p>
+        </div>
+        
+        <div class="nav">
+            <a href="../">🏠 Frontend Demo</a>
+            <a href="https://github.com/kevinbdx35/punchline">📁 GitHub Repository</a>
+            <a href="#quick-start">🚀 Quick Start</a>
+        </div>
+        
+        <div id="content">
+            <p>Loading documentation...</p>
+        </div>
+    </article>
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        fetch('https://raw.githubusercontent.com/kevinbdx35/punchline/main/API_DOCUMENTATION.md')
+            .then(response => response.text())
+            .then(markdown => {
+                document.getElementById('content').innerHTML = marked.parse(markdown);
+            })
+            .catch(error => {
+                console.error('Error loading documentation:', error);
+                document.getElementById('content').innerHTML = '<h2>📚 API Documentation</h2><p>Visit the <a href="https://github.com/kevinbdx35/punchline">GitHub repository</a> for complete documentation.</p>';
+            });
+    </script>
+</body>
+</html>
