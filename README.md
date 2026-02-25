@@ -323,6 +323,12 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - GitHub Pages for free hosting
 - All contributors and testers
 
+## Improvements
+
+- Fixed critical route ordering bug in `routes/quotes.js`: `GET /random` and `GET /stats` were declared after `GET /:id`, causing Express to match them as `/:id` with `id="random"` / `id="stats"` (returns NaN → 400 "Invalid quote ID"). Moved `/random` and `/stats` before `/:id`.
+- Removed `X-UA-Compatible` meta tag from `punchline-front/public/index.html`
+- Fixed `<script>` tag placed after `</body>` → moved inside `<body>` (valid HTML)
+
 ---
 
 <div align="center">
